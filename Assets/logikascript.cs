@@ -7,6 +7,12 @@ public class logikascript : MonoBehaviour
     public Text scoreText;
     public GameObject GameOverScreen;
 
+    void Start()
+    {
+        Application.targetFrameRate = 60; // batas fps
+    }
+
+
     [ContextMenu("Increase Score")]
    public void addscore() 
     {
