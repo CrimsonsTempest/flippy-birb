@@ -19,11 +19,17 @@ public class logikascript : MonoBehaviour
         playerscore = playerscore + 1;
         scoreText.text = playerscore.ToString();
     }
+    
+    public void addscore(int x) 
+    {
+        playerscore = playerscore + x;
+        scoreText.text = playerscore.ToString();
+    }
 
     public void restartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
     }
 
     public void GameOver() { 
