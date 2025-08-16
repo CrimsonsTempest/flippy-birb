@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Pipemovescript : MonoBehaviour
 {
-    public float movespeed = 5;
+
+    public CoinDecider2 cd;
     public float deadzone = -45;
 
     void Start()
@@ -13,7 +14,7 @@ public class Pipemovescript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += (Vector3.left * movespeed)* Time.deltaTime;
+        transform.position += Vector3.left * cd.movespeed* Time.deltaTime;
 
         if (transform.position.x < deadzone)
         {

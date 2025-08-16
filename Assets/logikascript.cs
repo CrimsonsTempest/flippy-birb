@@ -6,10 +6,11 @@ public class logikascript : MonoBehaviour
     public int playerscore;
     public Text scoreText;
     public GameObject GameOverScreen;
-
+    public CoinDecider2 coinDecider2;
     void Start()
     {
         Application.targetFrameRate = 60; // batas fps
+        coinDecider2.attachlogic(this);
     }
 
 

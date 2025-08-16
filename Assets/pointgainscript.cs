@@ -8,17 +8,13 @@ public class pointgainscript : MonoBehaviour
     public CoinDecider2 coindecider;
 
 
-     logikascript logic;
-    void Start()
-    {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<logikascript>();
-    }
+
 
     // Update is called once per frame
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        coindecider.hit(logic);
+        coindecider.hit();
         Destroy(gameObject);
     }
 }

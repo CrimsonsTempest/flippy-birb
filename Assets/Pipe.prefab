@@ -315,6 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769f7b0f3d867dc45b7a643752fd397b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cd: {fileID: 11400000, guid: 61c15308006223742971d11adc085a1d, type: 2}
   movespeed: 3
   deadzone: -45
 --- !u!1001 &8581284652159524503
