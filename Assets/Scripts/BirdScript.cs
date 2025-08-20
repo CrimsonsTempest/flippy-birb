@@ -41,8 +41,6 @@ public class BirdScript : MonoBehaviour
 
     void Update()
     {
-        // Remove manual Input.GetKeyDown check
-        // Only handle out-of-bounds and game over logic here
 
         if (transform.position.y < -18)
         {

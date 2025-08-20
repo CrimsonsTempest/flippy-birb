@@ -14,12 +14,12 @@ public class Pipemovescript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.left * cd.movespeed* Time.deltaTime;
+        transform.position += Vector3.left * cd.Rmovespeed* Time.deltaTime;
 
         if (transform.position.x < deadzone)
         {
             Destroy(gameObject);
-            Debug.Log("Pipe Deleted");
+        
         }
     }
 }

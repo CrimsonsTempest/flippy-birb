@@ -5,7 +5,7 @@ public class bgspawn : MonoBehaviour
 {
 
  public GameObject background;
-    public float spawnrate=2;
+    
     private float timer=0;
     public CoinDecider2 cd;
 
@@ -15,11 +15,11 @@ public class bgspawn : MonoBehaviour
     void Start()
     {
         spawnbg();
-        cd.attachBGspawn(this);
+        
     }
     void Update()
     {
-        if (timer < spawnrate)
+        if (timer < cd.Rbgspawnrate)
         {
             timer += Time.deltaTime;
         }

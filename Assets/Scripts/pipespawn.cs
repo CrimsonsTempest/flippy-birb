@@ -3,19 +3,18 @@ using UnityEngine;
 public class pipespawn : MonoBehaviour
 {
     public GameObject pipe;
-    public float spawnrate=2;
+    
     private float timer=0;
     public float height_offset = 10;
     public CoinDecider2 cd;
     void Start()
     {
         spawnpipe();
-        cd.attachPspawn(this);
     }
 
     void Update()
     {
-        if (timer < spawnrate)
+        if (timer < cd.RPipeSpawnrate)
         {
             timer += Time.deltaTime;
         }

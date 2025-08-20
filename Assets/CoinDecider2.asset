@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcbb6e40319bd94197bcd15098db183, type: 3}
   m_Name: CoinDecider2
   m_EditorClassIdentifier: 
-  logicScript: {fileID: 0}
+  bgspawn: {fileID: 0}
+  Pipespawn: {fileID: 0}
+  movespeed: 5
+  bgspawnrate: 10
+  PipeSpawnrate: 3
+  IncreaseRate: 1.05
+  Rmovespeed: 5
+  Rbgspawnrate: 10
+  RPipeSpawnrate: 3
+  RIncreaseRate: 1.05

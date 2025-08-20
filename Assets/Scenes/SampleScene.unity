@@ -815,7 +815,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 9067326355603396673, guid: b5fe97760df5b37418f779e9441b11e3, type: 3}
-  spawnrate: 3
   height_offset: 2
   cd: {fileID: 11400000, guid: 61c15308006223742971d11adc085a1d, type: 2}
 --- !u!1 &1854663560
@@ -848,7 +847,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854663560}
   m_BodyType: 0
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -1124,7 +1123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 866154647441264911, guid: 2d60dde987ed460449e683304fbe944b, type: 3}
-  spawnrate: 10
   cd: {fileID: 11400000, guid: 61c15308006223742971d11adc085a1d, type: 2}
 --- !u!4 &1862690532
 Transform:

@@ -9,7 +9,7 @@ public class logikascript : MonoBehaviour
     public CoinDecider2 coinDecider2;
     void Start()
     {
-        Application.targetFrameRate = 60; // batas fps
+        Application.targetFrameRate = 60;
         coinDecider2.attachlogic(this);
     }
 
