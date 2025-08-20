@@ -815,7 +815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 9067326355603396673, guid: b5fe97760df5b37418f779e9441b11e3, type: 3}
-  height_offset: 2
+  height_offset: 6
   cd: {fileID: 11400000, guid: 61c15308006223742971d11adc085a1d, type: 2}
 --- !u!1 &1854663560
 GameObject:

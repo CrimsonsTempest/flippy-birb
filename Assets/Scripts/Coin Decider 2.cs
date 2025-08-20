@@ -20,7 +20,7 @@ public class CoinDecider2 : ScriptableObject
     public float RIncreaseRate;
 
 
-    void reloaded()
+    public void reloaded()
     {
         Rmovespeed = movespeed;
         Rbgspawnrate = bgspawnrate;

@@ -33,7 +33,8 @@ public class logikascript : MonoBehaviour
 
     }
 
-    public void GameOver() { 
+    public void GameOver() {
+        coinDecider2.reloaded();
     GameOverScreen.SetActive(true);
     }
 }

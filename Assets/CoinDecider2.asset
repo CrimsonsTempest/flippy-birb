@@ -16,9 +16,9 @@ MonoBehaviour:
   Pipespawn: {fileID: 0}
   movespeed: 5
   bgspawnrate: 10
-  PipeSpawnrate: 3
-  IncreaseRate: 1.05
+  PipeSpawnrate: 2
+  IncreaseRate: 1.1
   Rmovespeed: 5
   Rbgspawnrate: 10
-  RPipeSpawnrate: 3
-  RIncreaseRate: 1.05
+  RPipeSpawnrate: 2
+  RIncreaseRate: 1.1
