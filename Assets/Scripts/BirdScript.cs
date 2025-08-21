@@ -10,34 +10,8 @@ public class BirdScript : MonoBehaviour
     public logikascript logic;
     public bool birbisalive = true;
 
-    private PlayerInput playerInput;
-    private InputAction jumpAction;
 
-    void Awake()
-    {
-        playerInput = GetComponent<PlayerInput>();
-        if (playerInput != null)
-        {
-            jumpAction = playerInput.actions["Jump"];
-        }
-    }
-
-    void OnEnable()
-    {
-        if (jumpAction != null)
-            jumpAction.performed += OnJump;
-    }
-
-    void OnDisable()
-    {
-        if (jumpAction != null)
-            jumpAction.performed -= OnJump;
-    }
-
-    void Start()
-    {
-
-    }
+   
 
     void Update()
     {
@@ -50,7 +24,7 @@ public class BirdScript : MonoBehaviour
         }
     }
 
-    private void OnJump(InputAction.CallbackContext context)
+    public void OnJump(InputAction.CallbackContext context)
     {
         if (birbisalive)
         {
@@ -58,7 +32,7 @@ public class BirdScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         birbisalive = false;
         logic.GameOver();
