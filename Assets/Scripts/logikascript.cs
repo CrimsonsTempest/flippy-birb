@@ -28,13 +28,13 @@ public class logikascript : MonoBehaviour
     }
 
     public void restartGame()
-    {
+    {   coinDecider2.reloaded();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
     }
+    
 
-    public void GameOver() {
-        coinDecider2.reloaded();
-    GameOverScreen.SetActive(true);
+    public void GameOver()
+    {
+        GameOverScreen.SetActive(true);
     }
 }
